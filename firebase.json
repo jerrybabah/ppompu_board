@@ -1,0 +1,14 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "functions": {
+    "source": "apps/functions",
+    "codebase": "default",
+    "predeploy": [
+      "yarn workspace @libs/firestore build",
+      "yarn workspace @apps/functions build"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "@apps/functions",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "author": "Jerry Baba",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "build": "tsc",
+    "start": "yarn build && firebase functions:shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "dependencies": {
+    "@libs/firestore": "^1.0.0",
+    "express": "^4.19.2",
+    "firebase-functions": "^5.0.1",
+    "inversify": "^6.0.2",
+    "inversify-express-utils": "^6.4.6",
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@libs/firestore",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "author": "Jerry Baba",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "typesaurus": "^10.7.0"
+  }
+}
